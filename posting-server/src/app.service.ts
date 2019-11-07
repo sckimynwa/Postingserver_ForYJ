@@ -4,7 +4,9 @@ import { Injectable } from '@nestjs/common';
 export class AppService {
 
   postQuestion(imageNo: string, value: string) {
-    return `post from the front success! image: ${imageNo} value: ${value}`;
+    return {
+      result: `post from the front success! image: ${imageNo} value: ${value}`
+    };
   }
 
 }
